@@ -10,7 +10,17 @@
     <main>
         <h1> The  absurd A B C</h1>
         <h2> By John lane </h2>
+        <button id = "click">count:0></button>
+        <script>
+            const button = document.querySelector('#click');
+            let count = 0;
+            button.addEventListener('click', () => {
+                button.classList.add('snurra');
+           count++;
+         button.textContent = `count: ${count}`; 
+         });  
         
+        </script> 
         <h3> A</h3>
         <p> apple pie and ever one get a slice </p>
         <h3>B</h3>
